@@ -1,0 +1,124 @@
+header {
+    width: 100%;
+    padding: 0.938em;
+    background-color: transparent;
+    position: absolute;
+}
+
+h2 {
+    font-family: $headlinesFontFamily;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.438rem;
+    margin: 0;
+    letter-spacing: 0.10px;
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navigation {
+    display: none;
+    // display: inline-flex;
+}
+
+.navigation > li > a {
+    font-family: $mainFontFamily;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: right;
+    margin-left: 0.625em;
+    &:hover {
+        color: $lightBlue;
+    }
+    &:active {
+        color: $lightBlue;
+    }
+}
+
+.hamburger {
+    width: 45px;
+    height: 45px;
+    border: 0;
+    border-top: 5px solid #ffffff;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.2s transform linear;
+}
+
+.hamburger::before, .hamburger::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.2s transform linear;
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
+
+.banner {
+    max-width: 1600px;
+    height: 600px;
+    background: url("") no-repeat;
+    background-size: cover;
+    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .wrapper {
+        .main-slider {
+            text-align: center;
+            .slide {
+            }
+        }
+    }
+}
+
+.show-slide p {
+    font-family: $mainFontFamily;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.show-slide span {
+    display: inline-flex;
+    background-color: $lightBlue;
+}
+
+.show-slide .button {
+    font-weight: normal;
+    font-size: 0.875rem;
+    text-align: center;
+    display: block;
+    margin: 40px auto;
+    &:hover {
+        background-color: #ffffff;
+    }
+}

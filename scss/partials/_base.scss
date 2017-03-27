@@ -1,0 +1,70 @@
+/* colors */
+
+$lightBlue: #00e0d0;
+$headlineGray: rgba(65, 61, 75, 0.5);
+$paragraphGray: #403d4b;
+
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* content */
+
+html {
+    font-size: 16px;
+    font-family: $mainFontFamily;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    font-family: $headlinesFontFamily;
+}
+
+h4 {
+    color: rgba(47,45,53,0.75);
+    font-family: $headlinesFontFamily;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+span.line {
+    width: 50px;
+    height: 1px;
+    margin-top: 21px;
+    margin-bottom: 30px;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.button {
+    border: 1px solid $lightBlue;
+    border-radius: 2px;
+    width: 118px;
+    height: 38px;
+    color: $lightBlue;
+    font-family: $buttonFontFamily;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}

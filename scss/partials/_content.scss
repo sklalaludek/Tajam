@@ -1,0 +1,186 @@
+#about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    p {
+        color: $paragraphGray;
+        font-family: $mainFontFamily;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    a {
+        display: block;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+}
+
+#video {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("") no-repeat;
+    background-size: cover;
+    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    p {
+        color: #ffffff;
+        font-family: $mainFontFamily;
+        font-size: 16px;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+#expertise {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    span {
+        display: inline-flex;
+        background-color: rgba(65, 61, 75, 0.3);
+    }
+    img {
+        padding: 20px 0;
+    }
+    h5 {
+        font-family: $mainFontFamily;
+        font-weight: 700;
+    }
+    p {
+        color: rgba(51, 51, 51, 0.75);
+        font-family: $mainFontFamily;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}
+
+#team {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    text-align: center;
+    h3 {
+        color: #ffffff;
+    }
+    h4 {
+        color: #f9f9f9;
+    }
+    span {
+        display: inline-flex;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    figure {
+        img {
+            background-color: #ffffff;
+            height: 229px;
+            width: 220px;
+        }
+        figcaption {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+            padding: 20px;
+            width: 218px;
+            border: 1px solid  #e1e1e1;
+            h5 {
+                color: #ffffff;
+                font-family: $mainFontFamily;
+                font-size: 14px;
+                font-weight: 900;
+            }
+            p {
+                color: rgba(250, 250, 250, 0.7);
+                font-family: $mainFontFamily;
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+    }
+    p {
+        color: #f3f3f3;
+        font-family: $mainFontFamily;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 10px;
+    }
+    a {
+        display: block;
+        margin: 0 auto;
+        font-size: 12px;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+}
+
+#work {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    a {
+        color: #413d4b;
+    }
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div {
+        width: 267px;
+        height: 200px;
+        &:first-child{
+            background-color: #b6b6b6;
+        }
+    }
+}
+
+#load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+        display: block;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+}
+
+#testimonials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+}
