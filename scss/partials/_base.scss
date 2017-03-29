@@ -20,6 +20,7 @@ html {
 }
 
 body {
+    font-size: 16px;
     background-color: #ffffff;
 }
 
@@ -29,11 +30,20 @@ ul {
 
 h3 {
     font-family: $headlinesFontFamily;
+    text-transform: uppercase;
 }
 
 h4 {
-    color: rgba(47,45,53,0.75);
     font-family: $headlinesFontFamily;
+    color: rgba(47,45,53,0.75);
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -53,16 +63,15 @@ span.line {
 }
 
 .button {
-    border: 1px solid $lightBlue;
-    border-radius: 2px;
     width: 118px;
     height: 38px;
-    color: $lightBlue;
     font-family: $buttonFontFamily;
-    line-height: 100%;
+    color: $lightBlue;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px;
+    border: 1px solid $lightBlue;
+    border-radius: 2px;
+    padding: 8px;
 }
 
 .hidden {

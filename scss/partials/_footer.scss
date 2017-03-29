@@ -1,0 +1,94 @@
+footer {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    p {
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #ffffff;
+        line-height: 26px;
+        margin: 0;
+    }
+    h5 {
+        font-family: $mainFontFamily;
+        font-size: 0.9375rem;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 26px;
+        letter-spacing: 0.50px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .adress {
+        display: flex;
+        justify-content:  flex-start;
+        align-items: baseline;
+        padding-bottom: 10px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .number {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding-bottom: 10px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .newsletter {
+        display: flex;
+        flex-wrap: wrap;
+        input {
+            background: transparent;
+            border: 1px solid #e5e5e5;
+            color: #ffffff;
+            outline: none;
+            padding: 10px;
+            &::placeholder {
+                font-family: $mainFontFamily;
+                font-size: 0.875rem;
+                color: #e5e5e5;
+            }
+        }
+        .arrow-newsletter {
+            margin-left: 10px;
+        }
+    }
+    .socials {
+        margin: 15px 0;
+        .social-link {
+            border: 1px solid #ffffff;
+            padding: 5px;
+            border-radius: 50%;
+            margin-right: 5px;
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+    }
+    .bottom-menu {
+        display: inline-flex;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.50px;
+        text-transform: uppercase;
+        li > a {
+            color: #ffffff;
+            margin-right: 20px;
+            &:hover {
+                color: $lightBlue;
+            }
+        }
+    }
+    .copyrights {
+        padding-top: 40px;
+    }
+}

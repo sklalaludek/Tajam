@@ -5,16 +5,27 @@
         display: block;
         margin: 0 auto;
     }
+    h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: rgb(65, 61, 75);
+        line-height: 22px;
+        letter-spacing: 0.50px;
+    }
     p {
-        color: $paragraphGray;
         font-family: $mainFontFamily;
         font-size: 0.875rem;
-        line-height: 1.375rem;
         font-weight: 300;
+        color: $paragraphGray;
+        line-height: 1.375rem;
+        letter-spacing: 0.50px;
         margin-bottom: 15px;
     }
-    a {
+    .button {
         display: block;
+        font-weight: 300;
+        font-size: 0.875rem;
+        margin-bottom: 20px;
         &:hover {
             background-color: $lightBlue;
             color: #ffffff;
@@ -37,12 +48,14 @@
     background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
     background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
     p {
+        // font-size: 1rem;
+        font-size: 0.875rem;
         color: #ffffff;
-        font-family: $mainFontFamily;
-        font-size: 16px;
         font-weight: 900;
-        text-align: center;
-        margin-top: 15px;
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        margin-top: 20px;
+        text-transform: uppercase;
     }
 }
 
@@ -50,6 +63,20 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: rgb(65, 61, 75);
+        line-height: 22px;
+        letter-spacing: 0.50px;
+    }
+    h4 {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: rgb(47, 45, 53);
+        line-height: 22px;
+        letter-spacing: 0.50px;
+    }
     span {
         display: inline-flex;
         background-color: rgba(65, 61, 75, 0.3);
@@ -59,18 +86,24 @@
     }
     h5 {
         font-family: $mainFontFamily;
+        font-size: 0.875rem;
         font-weight: 700;
+        color: rgb(65, 61, 75);
+        line-height: 22px;
+        letter-spacing: 0.50px;
     }
     p {
-        color: rgba(51, 51, 51, 0.75);
         font-family: $mainFontFamily;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 300;
+        color: rgb(51, 51, 51);
         line-height: 22px;
+        letter-spacing: 0.50px;
     }
 }
 
 #team {
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
@@ -80,16 +113,28 @@
     background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
     text-align: center;
     h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
         color: #ffffff;
+        line-height: 22px;
+        letter-spacing: 0.50px;
     }
     h4 {
+        font-size: 0.875rem;
+        font-weight: 400;
         color: #f9f9f9;
+        line-height: 22px;
+        letter-spacing: 0.50px;
     }
     span {
         display: inline-flex;
         background-color: rgba(255, 255, 255, 0.2);
     }
     figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         img {
             background-color: #ffffff;
             height: 229px;
@@ -101,34 +146,44 @@
             align-items: center;
             flex-direction: column;
             margin-bottom: 10px;
-            padding: 20px;
+            padding: 15px 15px 5px 15px;
             width: 218px;
             border: 1px solid  #e1e1e1;
             h5 {
-                color: #ffffff;
                 font-family: $mainFontFamily;
-                font-size: 14px;
-                font-weight: 900;
+                font-size: 0.875rem;
+                font-weight: 700;
+                color: #ffffff;
+                line-height: 22px;
+                letter-spacing: 0.50px;
+                margin: 0;
             }
             p {
-                color: rgba(250, 250, 250, 0.7);
-                font-family: $mainFontFamily;
-                font-size: 13px;
+                font-size: 0.8125rem;
                 font-weight: 300;
+                color: rgba(250, 250, 250, 0.7);
+                line-height: 22px;
+                letter-spacing: 0.50px;
             }
         }
     }
-    p {
-        color: #f3f3f3;
-        font-family: $mainFontFamily;
-        font-size: 14px;
+    .bottom-p-team {
+        font-size: 0.875rem;
         font-weight: 300;
-        padding: 10px;
+        color: #f3f3f3;
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 20px;
     }
-    a {
+    .button {
+        width: 140px;
         display: block;
+        font-weight: 300;
+        font-size: 0.875rem;
         margin: 0 auto;
-        font-size: 12px;
+        margin-bottom: 20px;
         &:hover {
             background-color: $lightBlue;
             color: #ffffff;
@@ -140,22 +195,36 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    a {
+    h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: rgb(65, 61, 75);
+        line-height: 22px;
+        letter-spacing: 0.50px;
+    }
+    .link-work {
         color: #413d4b;
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        &:hover {
+            color: $lightBlue;
+        }
     }
 }
 
 #projects {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    div {
+    .project {
         width: 267px;
         height: 200px;
-        &:first-child{
-            background-color: #b6b6b6;
-        }
+        background-color: #b6b6b6;
+        margin-bottom: 1px;
     }
 }
 
@@ -166,8 +235,12 @@
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
-    a {
+    .button {
         display: block;
+        font-weight: 300;
+        font-size: 0.875rem;
+        margin: 0 auto;
+        margin-bottom: 20px;
         &:hover {
             background-color: $lightBlue;
             color: #ffffff;
@@ -176,11 +249,86 @@
 }
 
 #testimonials {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
     background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
     background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
     background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
     background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
     background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 26px;
+        padding: 25px 0;
+    }
+    h5 {
+        font-family: $mainFontFamily;
+        font-size: 0.875rem;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        margin: 0;
+    }
+    .bottom-p-testimonials {
+        font-size:  0.8125rem;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        padding: 0;
+    }
 }
+
+#contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h3 {
+        font-size:  1.375rem;
+        font-weight: 700;
+        color: rgb(65, 61, 75);
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        margin-bottom: 20px;
+    }
+    input, textarea {
+        width: 100%;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #333333;
+        border: 1px solid #e5e5e5;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .submit {
+        display: block;
+        width: 118px;
+        height: 38px;
+        font-family: $buttonFontFamily;
+        font-size: 0.875rem;
+        color: $lightBlue;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 22px;
+        letter-spacing: 0.50px;
+        border: 1px solid $lightBlue;
+        border-radius: 2px;
+        padding: 8px;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+    img {
+        width: 100%;
+        display: inline-flex;
+        padding: 15px;
+    }
+}
+    input::placeholder {
+        font-family: $mainFontFamily;
+        color: rgba(65, 61, 75, 0.5);
+    }
