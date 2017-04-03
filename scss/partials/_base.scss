@@ -1,6 +1,7 @@
 /* colors */
 
 $lightBlue: #00e0d0;
+$blue: #09052f;
 $headlineGray: rgba(65, 61, 75, 0.5);
 $paragraphGray: #403d4b;
 
@@ -22,10 +23,27 @@ html {
 body {
     font-size: 16px;
     background-color: #ffffff;
+    line-height:  1.375rem;
+    letter-spacing: 0.50px;
 }
 
 ul {
     list-style-type: none;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: $headlinesFontFamily;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
 }
 
 h3 {
@@ -50,7 +68,7 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-span.line {
+.line {
     width: 50px;
     height: 1px;
     margin-top: 21px;
@@ -71,7 +89,18 @@ span.line {
     text-transform: uppercase;
     border: 1px solid $lightBlue;
     border-radius: 2px;
-    padding: 8px;
+    padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    letter-spacing: normal;
+}
+
+.sticky {
+    z-index: 100000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .hidden {

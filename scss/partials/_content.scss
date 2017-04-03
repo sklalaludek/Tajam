@@ -9,16 +9,12 @@
         font-size: 1.375rem;
         font-weight: 700;
         color: rgb(65, 61, 75);
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     p {
         font-family: $mainFontFamily;
         font-size: 0.875rem;
         font-weight: 300;
         color: $paragraphGray;
-        line-height: 1.375rem;
-        letter-spacing: 0.50px;
         margin-bottom: 15px;
     }
     .button {
@@ -40,20 +36,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("") no-repeat;
+    background: url("../images/video-bg.png") no-repeat;
     background-size: cover;
-    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    background-position: center;
     p {
-        // font-size: 1rem;
         font-size: 0.875rem;
         color: #ffffff;
         font-weight: 900;
-        line-height: 22px;
-        letter-spacing: 0.50px;
         margin-top: 20px;
         text-transform: uppercase;
     }
@@ -67,15 +56,11 @@
         font-size: 1.375rem;
         font-weight: 700;
         color: rgb(65, 61, 75);
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     h4 {
         font-size: 0.875rem;
         font-weight: 400;
         color: rgb(47, 45, 53);
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     span {
         display: inline-flex;
@@ -89,16 +74,12 @@
         font-size: 0.875rem;
         font-weight: 700;
         color: rgb(65, 61, 75);
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     p {
         font-family: $mainFontFamily;
         font-size: 0.875rem;
         font-weight: 300;
         color: rgb(51, 51, 51);
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
 }
 
@@ -106,25 +87,19 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    background: url("../images/team-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     h3 {
         font-size: 1.375rem;
         font-weight: 700;
         color: #ffffff;
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     h4 {
         font-size: 0.875rem;
         font-weight: 400;
         color: #f9f9f9;
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     span {
         display: inline-flex;
@@ -154,16 +129,12 @@
                 font-size: 0.875rem;
                 font-weight: 700;
                 color: #ffffff;
-                line-height: 22px;
-                letter-spacing: 0.50px;
                 margin: 0;
             }
             p {
                 font-size: 0.8125rem;
                 font-weight: 300;
                 color: rgba(250, 250, 250, 0.7);
-                line-height: 22px;
-                letter-spacing: 0.50px;
             }
         }
     }
@@ -171,8 +142,6 @@
         font-size: 0.875rem;
         font-weight: 300;
         color: #f3f3f3;
-        line-height: 22px;
-        letter-spacing: 0.50px;
         margin: 0;
         padding-top: 25px;
         padding-bottom: 20px;
@@ -199,15 +168,11 @@
         font-size: 1.375rem;
         font-weight: 700;
         color: rgb(65, 61, 75);
-        line-height: 22px;
-        letter-spacing: 0.50px;
     }
     .link-work {
         color: #413d4b;
         font-size: 0.875rem;
         font-weight: 300;
-        line-height: 22px;
-        letter-spacing: 0.50px;
         &:hover {
             color: $lightBlue;
         }
@@ -253,11 +218,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
-    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    background: url("../images/testminonials-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
     p {
         font-size: 1rem;
         font-weight: 400;
@@ -270,15 +233,11 @@
         font-size: 0.875rem;
         font-weight: 900;
         color: #ffffff;
-        line-height: 22px;
-        letter-spacing: 0.50px;
         margin: 0;
     }
     .bottom-p-testimonials {
         font-size:  0.8125rem;
         font-weight: 300;
-        line-height: 22px;
-        letter-spacing: 0.50px;
         padding: 0;
     }
 }
@@ -290,8 +249,6 @@
         font-size:  1.375rem;
         font-weight: 700;
         color: rgb(65, 61, 75);
-        line-height: 22px;
-        letter-spacing: 0.50px;
         margin-bottom: 20px;
     }
     input, textarea {
@@ -312,8 +269,6 @@
         color: $lightBlue;
         text-align: center;
         text-transform: uppercase;
-        line-height: 22px;
-        letter-spacing: 0.50px;
         border: 1px solid $lightBlue;
         border-radius: 2px;
         padding: 8px;
@@ -322,10 +277,16 @@
             color: #ffffff;
         }
     }
-    img {
-        width: 100%;
-        display: inline-flex;
-        padding: 15px;
+    .clients-logo {
+        height: 100px;
+        max-width: 185px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        img {
+            display: inline-flex;
+            padding: 15px;
+        }
     }
 }
     input::placeholder {

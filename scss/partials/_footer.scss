@@ -1,12 +1,10 @@
-footer {
+.page-footer {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-    background: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+    background: url("../images/contact-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
     p {
         font-size: 0.875rem;
         font-weight: 300;
@@ -50,26 +48,47 @@ footer {
             border: 1px solid #e5e5e5;
             color: #ffffff;
             outline: none;
-            padding: 10px;
+            padding: 8px;
             &::placeholder {
                 font-family: $mainFontFamily;
                 font-size: 0.875rem;
                 color: #e5e5e5;
             }
         }
-        .arrow-newsletter {
+        .arrow-box {
+            width: 70px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-left: 10px;
+            &:hover {
+                background-color: $lightBlue;
+            }
+            .arrow-newsletter {
+
+            }
         }
+
     }
     .socials {
+        display: flex;
         margin: 15px 0;
         .social-link {
             border: 1px solid #ffffff;
             padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
-            margin-right: 5px;
             &:hover {
                 background-color: $lightBlue;
+            }
+            &:not(:last-child) {
+                margin-right: 5px;
             }
         }
     }
