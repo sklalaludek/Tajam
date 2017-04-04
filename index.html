@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tajam</title>
@@ -13,8 +14,8 @@
     <header class="page-header">
         <div class="container menu">
             <div class="row">
-                <div id="home" class="col-sx-12 col-sm-12 col-md-12 col-lg-12 homepage">
-                    <h1><a href="#home"><img src="images/tajam-logo.png" alt="tajam logo" title="Go back to homepage"></a></h1>
+                <div id="home" class="col-sx-12 homepage">
+                    <h1><a href="#home"><img src="images/tajam-logo.png" alt="tajam logo" title="Go back to homepage" class="logo-img"></a></h1>
                     <nav class="page-nav">
                         <ul class="navigation">
                             <li><a href="#homepage" title="Go back to homepage">HOME</a></li>
@@ -32,7 +33,7 @@
         </div>
     </header>
     <!-- Place for a slider -->
-    <div class="outer">
+    <div class="outer-bg">
         <div class="banner">
             <div class="main-slider container">
                 <ul class="slides">
@@ -72,6 +73,14 @@
                         <div class="show-slide">
                             <h2>We Are Awasowe Creative Agencies</h2>
                             <span class="line"></span>
+                            <p> Trzy This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                            <a href="#" class="button">learn more</a>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="show-slide">
+                            <h2>We Are Awasowe Creative Agencies</h2>
+                            <span class="line"></span>
                             <p>Kopia zero This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
                             <a href="#" class="button">learn more</a>
                         </div>
@@ -81,6 +90,7 @@
             <div class="dots">
                 <a  href="#" class="active-link"></a>
                 <a href="#"></a>
+                <a  href="#"></a>
                 <a  href="#"></a>
             </div>
         </div>
@@ -101,11 +111,13 @@
         </div>
     </section>
 
-    <div id="video">
-        <a href="#" title=""><img src="images/play.png" alt="play"></a>
-        <p>
-            WATCH OUR STORY
-        </p>
+    <div class="outer-bg-video">
+        <div id="video">
+            <a href="#" title=""><img src="images/play.png" alt="play" class="video-link"></a>
+            <p>
+                WATCH OUR STORY
+            </p>
+        </div>
     </div>
 
     <section id="expertise">
@@ -118,71 +130,73 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4"><img src="images/icon-1.png" alt="screen"><h5>WEB DESIGN &amp; DEVELOPMENT</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><img src="images/icon-2.png" alt="paintbrush"><h5>BRANDING IDENTITY</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><img src="images/icon-3.png" alt="phone"><h5>MOBILE APP</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><img src="images/icon-4.png" alt="chart"><h5>SEARCH ENGINE OPTIMIZATION</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><img src="images/icon-5.png" alt="gamepad"><h5>GAME DEVELOPMENT</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
-                <div class="col-sm-4 col-md-4 col-lg-4"><img src="images/icon-6.png" alt="heart"><h5>WITH LOVE</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4 expertise-item"><img src="images/icon-1.png" alt="screen"><h5>WEB DESIGN &amp; DEVELOPMENT</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4  expertise-item"><img src="images/icon-2.png" alt="paintbrush" class="expertise-img"><h5>BRANDING IDENTITY</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4  expertise-item"><img src="images/icon-3.png" alt="phone"><h5>MOBILE APP</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4  expertise-item"><img src="images/icon-4.png" alt="chart"><h5>SEARCH ENGINE OPTIMIZATION</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4  expertise-item"><img src="images/icon-5.png" alt="gamepad"><h5>GAME DEVELOPMENT</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
+                <div class="col-sm-4 col-md-4 col-lg-4  expertise-item"><img src="images/icon-6.png" alt="heart"><h5>WITH LOVE</h5><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p></div>
             </div>
         </div>
     </section>
 
-    <section id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <h3>MEET OUR AMAZING TEAM</h3>
-                    <h4>Lorem ipsum dolor sit amet proin gravida nibh vel velit</h4>
-                    <span class="line"></span>
+    <div class="outer-bg-team">
+        <section id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h3>MEET OUR AMAZING TEAM</h3>
+                        <h4>Lorem ipsum dolor sit amet proin gravida nibh vel velit</h4>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>
+                                <h5>name</h5>
+                                <p>CEO</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>
+                                <h5>name</h5>
+                                <p>CEO</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>
+                                <h5>name</h5>
+                                <p>CEO</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>
+                                <h5>name</h5>
+                                <p>CEO</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p class="bottom-p-team">Become part of our dream team, lets join us !</p>
+                        <a href="#" class="button">WE ARE HIRING</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            <h5>name</h5>
-                            <p>CEO</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            <h5>name</h5>
-                            <p>CEO</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            <h5>name</h5>
-                            <p>CEO</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>
-                            <h5>name</h5>
-                            <p>CEO</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <p class="bottom-p-team">Become part of our dream team, lets join us !</p>
-                    <a href="#" class="button">WE ARE HIRING</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <div id="work">
         <div class="container">
@@ -212,33 +226,35 @@
         <a href="#" class="button">LOAD MORE</a>
     </div>
 
-    <section id="testimonials">
-        <div class="container">
-            <div class="testimonials-slider">
-                <ul>
-                    <li>
-                        <div class="item">
-                            <img src="images/cytat-icon.png" alt="">
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-                            <h5>JANE GALADRIEL</h5>
-                            <p class="bottom-p-testimonials">CEO TENGKUREP</p>
-                        </div>
-                    </li>
-                </ul>
+    <div class="outer-bg-testimonials">
+        <section id="testimonials">
+            <div class="container">
+                <div class="testimonials-slider">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <img src="images/cytat-icon.png" alt="">
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                                <h5>JANE GALADRIEL</h5>
+                                <p class="bottom-p-testimonials">CEO TENGKUREP</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ellipses">
+                    <img src="images/Ellipse_1.png" alt="">
+                    <img src="images/Ellipse_2.png" alt="">
+                    <img src="images/Ellipse_3.png" alt="">
+                    <img src="images/Ellipse_4.png" alt="">
+                    <img src="images/Ellipse_5.png" alt="">
+                    <nav>
+                        <a class="arrow-slider" href="#" alt="arrow back"><img src="images/back.png"></a>
+                        <a class="arrow-slider" href="#" alt="arrow forward"><img src="images/forward.png"></a>
+                    </nav>
+                </div>
             </div>
-            <div class="ellipses">
-                <img src="images/Ellipse_1.png" alt="">
-                <img src="images/Ellipse_2.png" alt="">
-                <img src="images/Ellipse_3.png" alt="">
-                <img src="images/Ellipse_4.png" alt="">
-                <img src="images/Ellipse_5.png" alt="">
-                <nav>
-                    <a class="arrow-slider" href="#" alt="arrow back"><img src="images/back.png"></a>
-                    <a class="arrow-slider" href="#" alt="arrow forward"><img src="images/forward.png"></a>
-                </nav>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <section id="contact">
         <div class="container">
@@ -312,56 +328,58 @@
         </div>
     </section>
 
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <img src="images/tajam-logo.png" alt="tajam logo">
-                    <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <h5>OUR STUDIO</h5>
-                    <div class="adress">
-                        <img src="images/big.png" alt="marker">
-                        <p class="bottom-p-footer">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p>
+    <div class="outer-bg-footer">
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img src="images/tajam-logo.png" alt="tajam logo">
+                        <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
                     </div>
-                    <div class="number">
-                        <img src="images/phone.png" alt="handset">
-                        <p class="bottom-p-footer">(+62) 21-2224 3333</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <h5>STAY IN TOUCH</h5>
-                    <div class="newsletter">
-                        <input name="email" placeholder="Subscribe our newsletter" type="text">
-                        <div class="arrow-box">
-                            <a class="arrow-newsletter" href="#"><img src="images/paper.png" alt="paper plane arrow"></a>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h5>OUR STUDIO</h5>
+                        <div class="adress">
+                            <img src="images/big.png" alt="marker">
+                            <p class="bottom-p-footer">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p>
+                        </div>
+                        <div class="number">
+                            <img src="images/phone.png" alt="handset">
+                            <p class="bottom-p-footer">(+62) 21-2224 3333</p>
                         </div>
                     </div>
-                    <div class="socials">
-                        <a class="social-link" href="#"><img src="images/facebook.png" alt="facebook logo"></a>
-                        <a class="social-link" href="#"><img src="images/twitter.png" alt="twitter logo"></a>
-                        <a class="social-link" href="#"><img src="images/dribbble.png" alt="dribbble logo"></a>
-                        <a class="social-link" href="#"><img src="images/instagram.png" alt="instagram logo"></a>
-                        <a class="social-link" href="#"><img src="images/google.png" alt="google logo"></a>
-                        <a class="social-link" href="#"><img src="images/youtube.png" alt="youtube logo"></a>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h5>STAY IN TOUCH</h5>
+                        <div class="newsletter">
+                            <input name="email" placeholder="Subscribe our newsletter" type="text">
+                            <div class="arrow-box">
+                                <a class="arrow-newsletter" href="#"><img src="images/paper.png" alt="paper plane arrow"></a>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <a class="social-link" href="#"><img src="images/facebook.png" alt="facebook logo"></a>
+                            <a class="social-link" href="#"><img src="images/twitter.png" alt="twitter logo"></a>
+                            <a class="social-link" href="#"><img src="images/dribbble.png" alt="dribbble logo"></a>
+                            <a class="social-link" href="#"><img src="images/instagram.png" alt="instagram logo"></a>
+                            <a class="social-link" href="#"><img src="images/google.png" alt="google logo"></a>
+                            <a class="social-link" href="#"><img src="images/youtube.png" alt="youtube logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyrights">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <ul class="bottom-menu">
+                            <li><a href="#" title="">help</a></li>
+                            <li><a href="#" title="">terms and condition</a></li>
+                            <li><a href="#" title="">privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <p>Copyright &copy; 2015 - Tajem Creative</p>
                     </div>
                 </div>
             </div>
-            <div class="row copyrights">
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <ul class="bottom-menu">
-                        <li><a href="#" title="">help</a></li>
-                        <li><a href="#" title="">terms and condition</a></li>
-                        <li><a href="#" title="">privacy</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <p>Copyright &copy; 2015 - Tajem Creative</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>

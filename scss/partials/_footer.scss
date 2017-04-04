@@ -1,10 +1,13 @@
+.outer-bg-footer {
+    background: url("../images/contact-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .page-footer {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    background: url("../images/contact-bg.png") no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: $overlay;
     p {
         font-size: 0.875rem;
         font-weight: 300;
@@ -100,6 +103,7 @@
         letter-spacing: 0.50px;
         text-transform: uppercase;
         li > a {
+            // flex: 1;
             color: #ffffff;
             margin-right: 20px;
             &:hover {

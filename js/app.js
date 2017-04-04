@@ -1,12 +1,28 @@
 $(document).ready(function() {
-
+    /*debounce*/
+    // function debounce(func, wait = 20, immediate = true) {
+    //   var timeout;
+    //   return function() {
+    //     var context = this, args = arguments;
+    //     var later = function() {
+    //       timeout = null;
+    //       if (!immediate) func.apply(context, args);
+    //     };
+    //     var callNow = immediate && !timeout;
+    //     clearTimeout(timeout);
+    //     timeout = setTimeout(later, wait);
+    //     if (callNow) func.apply(context, args);
+    //   };
+    // };
     /*hamburger menu */
 
     var hamburgerMenu = $('.hamburger'),
-    header = $('.page-header');
+    header = $('.page-header'),
+    menu = $('.menu');
 
     hamburgerMenu.on('click', function(event){
-        header.toggleClass('nav-opened');
+        menu.toggleClass('nav-opened');
+
     });
 
     $(document).on('click', function(event){
@@ -50,7 +66,7 @@ $(document).ready(function() {
     function startSlider() {
         var width = $(window).width();
         slide.css('width', width);
-        slides.css('width', 5*width).css("margin-left", (currentSlide) * (-1) * width );
+        slides.css('width', 6*width).css("margin-left", (currentSlide) * (-1) * width );
 
         clearInterval(myInterval);
         myInterval = setInterval(function(){

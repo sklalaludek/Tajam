@@ -29,24 +29,28 @@
     }
 }
 
-#video {
-    height: 550px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.outer-bg-video{
     background: url("../images/video-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
-    p {
-        font-size: 0.875rem;
-        color: #ffffff;
-        font-weight: 900;
-        margin-top: 20px;
-        text-transform: uppercase;
+    #video {
+        height: 550px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $overlay;
+        p {
+            font-size: 0.875rem;
+            color: #ffffff;
+            font-weight: 900;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
     }
 }
+
 
 #expertise {
     padding-top: 20px;
@@ -83,13 +87,16 @@
     }
 }
 
+.outer-bg-team {
+    background: url("../images/team-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 #team {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: url("../images/team-bg.png") no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: $overlay;
     text-align: center;
     h3 {
         font-size: 1.375rem;
@@ -213,14 +220,17 @@
     }
 }
 
+.outer-bg-testimonials {
+    background: url("../images/testminonials-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 #testimonials {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
-    background: url("../images/testminonials-bg.png") no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: $overlay;
     p {
         font-size: 1rem;
         font-weight: 400;
@@ -278,7 +288,7 @@
         }
     }
     .clients-logo {
-        height: 100px;
+        min-height: 140px;
         max-width: 185px;
         display: flex;
         justify-content: center;
