@@ -162,6 +162,7 @@
 .show-slide span {
     display: inline-flex;
     background-color: $lightBlue;
+    margin-bottom: 30px;
 }
 
 .show-slide p {
@@ -204,7 +205,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .homepage {
         display: flex;
         justify-content: space-between;

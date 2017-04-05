@@ -1,0 +1,52 @@
+#contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h3 {
+        font-size:  1.375rem;
+        font-weight: 700;
+        color: rgb(65, 61, 75);
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    input, textarea {
+        width: 100%;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #333333;
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .submit {
+        display: block;
+        width: 118px;
+        height: 38px;
+        font-family: $buttonFontFamily;
+        font-size: 0.875rem;
+        color: $lightBlue;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid $lightBlue;
+        border-radius: 2px;
+        padding: 8px;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+    .clients-logo {
+        height: 70px;
+        max-width: 162px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: 10px;
+    }
+    // .clients-logo .levi {
+    //     margin-top: 20px;
+    // }
+}
+    input::placeholder {
+        font-family: $mainFontFamily;
+        color: rgba(65, 61, 75, 0.5);
+    }

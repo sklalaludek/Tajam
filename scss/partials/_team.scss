@@ -1,0 +1,82 @@
+.outer-bg-team {
+    background: url("../images/team-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#team {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $overlay;
+    text-align: center;
+    h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+    h4 {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #f9f9f9;
+    }
+    span {
+        display: inline-flex;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-bottom: 50px;
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+            background-color: #ffffff;
+            height: 229px;
+            width: 220px;
+        }
+        figcaption {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 218px;
+            border: 1px solid  #e1e1e1;
+            h5 {
+                font-family: $mainFontFamily;
+                font-size: 0.875rem;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 0;
+            }
+            p {
+                font-size: 0.8125rem;
+                font-weight: 300;
+                color: rgba(250, 250, 250, 0.7);
+                text-transform: uppercase;
+            }
+        }
+    }
+    .bottom-p-team {
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #f3f3f3;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .button {
+        width: 140px;
+        display: block;
+        font-weight: 300;
+        font-size: 0.875rem;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+}
