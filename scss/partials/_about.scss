@@ -1,0 +1,52 @@
+#about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .about-img {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: rgb(65, 61, 75);
+    }
+    p {
+        font-family: $mainFontFamily;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: $paragraphGray;
+        margin-bottom: 15px;
+    }
+    .button {
+        display: block;
+        font-weight: 300;
+        font-size: 0.875rem;
+        margin-bottom: 50px;
+        &:hover {
+            background-color: $lightBlue;
+            color: #ffffff;
+        }
+    }
+}
+
+.outer-bg-video{
+    background: url("../images/video-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    #video {
+        height: 550px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $overlay;
+        p {
+            font-size: 0.875rem;
+            color: #ffffff;
+            font-weight: 900;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+    }
+}

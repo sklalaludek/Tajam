@@ -199,6 +199,9 @@
     &:hover {
         background-color: $lightBlue;
     }
+    &.active-dot {
+        background-color: $lightBlue;
+    }
 }
 
 @media screen and (min-width: 800px) {
