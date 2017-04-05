@@ -89,9 +89,9 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
-figure {
+/*figure {
   margin: 1em 40px;
-}
+}*/
 hr {
   height: 0;
   -webkit-box-sizing: content-box;
@@ -1286,9 +1286,9 @@ h6,
 .h6 {
   font-size: 12px;
 }*/
-p {
+/*p {
   margin: 0 0 10px;
-}
+}*/
 .lead {
   margin-bottom: 20px;
   font-size: 16px;

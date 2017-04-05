@@ -25,7 +25,6 @@
 /*hamburger menu */
 
 .nav-opened {
-
     .page-nav {
         .navigation {
             display: flex;
@@ -56,9 +55,11 @@
     color: #ffffff;
     text-align: right;
     margin-left: 0.625em;
-    &:hover {
-        color: $lightBlue;
+    &:visited {
+        color: #ffffff;
     }
+    &:hover,
+    &:focus,
     &:active {
         color: $lightBlue;
     }
@@ -101,13 +102,14 @@
 }
 
 /*slider*/
+
 .outer-bg {
     background: url("../images/main-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .banner {
-    z-index: 1;
     width: 100%;
     height: 600px;
     background-color: $overlay;
@@ -127,6 +129,8 @@
                 float: left;
                 width: 370px;
                 height: 400px;
+                display: flex;
+                justify-content: center;
                 .show-slide {
                     display: flex;
                     justify-content: center;
@@ -139,6 +143,9 @@
                 }
             }
         }
+    }
+    .dots {
+        padding-top: 15px;
     }
 }
 
@@ -186,11 +193,11 @@
     border-style: solid;
     width: 10px;
     height: 10px;
+    &:not(:last-of-type){
+        margin-right: 5px;
+    }
     &:hover {
         background-color: $lightBlue;
-    }
-    &:nth-of-type(2n) {
-        margin: 0 5px;
     }
 }
 
