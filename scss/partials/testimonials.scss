@@ -14,31 +14,35 @@
     text-align: center;
     background-color: $overlay;
     .testimonials-slider {
-        .testimonials-show-slide {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            p {
-                font-size: 1rem;
-                font-weight: 400;
-                color: #ffffff;
-                line-height: 26px;
-                padding: 40px 0;
-            }
-            h5 {
-                font-family: $mainFontFamily;
-                font-size: 0.875rem;
-                font-weight: 900;
-                color: #ffffff;
-                margin: 0;
-            }
-            .bottom-p-testimonials {
-                font-size:  0.8125rem;
-                font-weight: 300;
-                padding: 0;
-                padding-bottom: 40px;
-                text-transform: uppercase;
+        .testimonials-slides {
+            position: relative;
+            display: inline-flex;
+            .testimonials-show-slide {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 26px;
+                    padding: 40px 0;
+                }
+                h5 {
+                    font-family: $mainFontFamily;
+                    font-size: 0.875rem;
+                    font-weight: 900;
+                    color: #ffffff;
+                    margin: 0;
+                }
+                .bottom-p-testimonials {
+                    font-size:  0.8125rem;
+                    font-weight: 300;
+                    padding: 0;
+                    padding-bottom: 40px;
+                    text-transform: uppercase;
+                }
             }
         }
     }

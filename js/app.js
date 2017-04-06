@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     $(document).on('click', function(event){
         if (!$(event.target).closest(header).length) {
-            header.removeClass('nav-opened');
+            menu.removeClass('nav-opened');
         }
     });
 
