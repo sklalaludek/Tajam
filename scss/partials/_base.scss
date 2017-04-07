@@ -76,11 +76,6 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 20px;
 }
 
-.main-wrapper {
-    margin: 0 auto;
-    width: 960px;
-}
-
 .button {
     width: 118px;
     height: 38px;
@@ -102,6 +97,15 @@ a:link, a:visited, a:hover, a:active {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.color-bg {
+    background-color: $blue;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    width: 960px;
 }
 
 .hidden {
