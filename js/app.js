@@ -43,7 +43,6 @@ $(document).ready(function() {
     homepageWrapper = homepage.find('.homepage-wrapper');
 
     function stickyMenu(event) {
-        console.log(event);
         var scroll = $(this).scrollTop();
         if (scroll > homepageTop) {
             homepage.addClass('sticky');
@@ -90,7 +89,19 @@ $(document).ready(function() {
         clearInterval(myInterval);
     }
 
+    /* show animation */
+
+    function showAnimation(event){
+        var slideInElements = $('.slide-in');
+        var slideInAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElements.height() / 2;
+
+        if (slideInAt > slideInElements.offset().top) {
+                slideInElements.addClass('active-element');
+        }
+    }
+
     $(window).on("scroll", debounce(stickyMenu, 10));
+    $(window).on("scroll", debounce(showAnimation));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     $(window).on("resize", startSlider);
     hamburgerMenu.on('click', showMobileMenu);

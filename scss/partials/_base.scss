@@ -111,3 +111,21 @@ a:link, a:visited, a:hover, a:active {
 .hidden {
     display: none;
 }
+
+.slide-in {
+    transition: all .5s;
+    opacity: 0;
+}
+
+.slide-in-left {
+    transform:translateX(-30%) scale(0.95);
+}
+
+.slide-in-right {
+    transform:translateX(30%) scale(0.95);
+}
+
+.active-element {
+    opacity: 1;
+    transform: translate(0%) scale(1);
+}
