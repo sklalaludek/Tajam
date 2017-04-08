@@ -112,8 +112,8 @@ a:link, a:visited, a:hover, a:active {
     display: none;
 }
 
-.slide-in {
-    transition: all .5s;
+.slide-in { 
+    transition: transform .6s;
     opacity: 0;
 }
 

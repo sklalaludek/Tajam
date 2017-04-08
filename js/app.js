@@ -100,6 +100,20 @@ $(document).ready(function() {
         }
     }
 
+    /* carousel */
+    // Activate Carousel
+    $("#myCarousel").carousel();
+
+    // Enable Carousel Indicators
+    $(".item").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+
     $(window).on("scroll", debounce(stickyMenu, 10));
     $(window).on("scroll", debounce(showAnimation));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
