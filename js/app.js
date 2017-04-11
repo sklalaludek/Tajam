@@ -101,21 +101,22 @@ $(document).ready(function() {
     }
 
     /* carousel */
+    
     // Activate Carousel
-    $("#myCarousel").carousel();
+    $('#quote-carousel').carousel();
 
     // Enable Carousel Indicators
-    $(".item").click(function(){
-        $("#myCarousel").carousel(1);
+    $('.item').click(function(){
+        $('#quote-carousel').carousel(1);
     });
 
     // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
+    $('.left').click(function(){
+        $('#quote-carousel').carousel('prev');
     });
 
-    $(window).on("scroll", debounce(stickyMenu, 10));
-    $(window).on("scroll", debounce(showAnimation));
+    $(window).on('scroll', debounce(stickyMenu, 10));
+    $(window).on('scroll', debounce(showAnimation));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     $(window).on("resize", startSlider);
     hamburgerMenu.on('click', showMobileMenu);
