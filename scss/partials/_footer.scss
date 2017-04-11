@@ -5,8 +5,8 @@
 }
 .page-footer {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     background-color: $overlay;
     .bottom-logo-img {
         margin-bottom: 15px;
@@ -78,7 +78,7 @@
     }
     .socials {
         display: flex;
-        margin: 20px 0;
+        margin-top: 30px;
         .social-link {
             border: 1px solid #ffffff;
             padding: 5px;
@@ -100,11 +100,11 @@
         width: 100%;
         padding-top: 40px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: baseline;
+        flex-flow: column wrap;
+        justify-content: flex-start;
         .bottom-menu {
             display: inline-flex;
+            flex: 0 1 0;
             font-size: 0.875rem;
             font-weight: 400;
             line-height: 26px;
@@ -119,11 +119,22 @@
             }
         }
         p {
-            text-align: right;
+            flex: 0 1 0;
+            text-align: left;
         }
     }
 }
 
 @media screen and (min-width: 768px) {
-
+    .page-footer {
+        .copyrights {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            p {
+                text-align: right;
+            }
+        }
+    }
 }
