@@ -101,7 +101,7 @@ $(document).ready(function() {
     }
 
     /* carousel */
-    
+
     // Activate Carousel
     $('#quote-carousel').carousel();
 
@@ -115,10 +115,28 @@ $(document).ready(function() {
         $('#quote-carousel').carousel('prev');
     });
 
+    /* newsletter */
+
+    function checkEmail(event){
+        var newsletterInput = $('.newsletter .newsletter-email'),
+        text = newsletterInput.val(),
+        atPosition = text.indexOf('@'),
+        dotPosition = text.lastIndexOf('.');
+        if (atPosition < 1 || dotPosition < atPosition + 2) {
+            newsletterInput.css('border', '1px solid red');
+        } else {
+            newsletterInput.css('border', '1px solid #e5e5e5');
+            console.log('email is ok');
+        }
+    } 
+
+
+
     $(window).on('scroll', debounce(stickyMenu, 10));
     $(window).on('scroll', debounce(showAnimation));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     $(window).on("resize", startSlider);
     hamburgerMenu.on('click', showMobileMenu);
     startSlider();
+    $('.newsletter .newsletter-email').on('keyup', checkEmail);
 });
