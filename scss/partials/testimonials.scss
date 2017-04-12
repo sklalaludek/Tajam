@@ -7,25 +7,50 @@
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    text-align: center;
     background-color: $overlay;
     .testimonials-slider {
-        .testimonials-slides {
-            position: relative;
-            display: inline-flex;
-            .testimonials-show-slide {
+        overflow: hidden;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+.carousel-slide {
+    position: relative;
+    text-align: center;
+    .carousel-indicators {
+        display: inline-flex;
+        flex-flow: row wrap;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 50%;
+        top: auto;
+        bottom: 0px;
+        li {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            .ellipse:not(:last-of-type) {
+                margin-right: 10px;
+            }
+        }
+
+    }
+    .carousel-inner {
+        blockquote {
+            border-left: none;
+            .item-content {
                 display: flex;
-                flex-flow: column nowrap;
+                flex-flow: column wrap;
                 justify-content: center;
                 align-items: center;
                 p {
                     font-size: 1rem;
                     font-weight: 400;
-                    color: #ffffff;
                     line-height: 26px;
                     padding: 40px 0;
                 }
@@ -33,7 +58,6 @@
                     font-family: $mainFontFamily;
                     font-size: 0.875rem;
                     font-weight: 900;
-                    color: #ffffff;
                     margin: 0;
                 }
                 .bottom-p-testimonials {
@@ -46,22 +70,11 @@
             }
         }
     }
-    .ellipses {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-bottom: 30px;
-        .ellipse:not(:last-of-type) {
-            margin-right: 10px;
-        }
-        .arrow-nav {
-            position: absolute;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            width: 100%;
-        }
+    .carousel-control {
+        position: absolute;
+        top: 80%;
+        bottom: 0;
+        text-shadow: none;
+
     }
 }

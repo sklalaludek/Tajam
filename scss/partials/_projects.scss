@@ -41,10 +41,6 @@
     backface-visibility: hidden;
 }
 
-// .project figure figcaption::before {
-//     pointer-events: none;
-// }
-
 .project figure figcaption,
 .project figure figcaption > a {
     position: absolute;
@@ -98,7 +94,7 @@
 }
 
 .overlay-effect:hover figcaption p {
-        opacity: 1; 
+        opacity: 1;
         transform: translate3d(0,0,0);
 }
 
