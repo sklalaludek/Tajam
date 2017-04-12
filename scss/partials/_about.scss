@@ -10,13 +10,17 @@
         font-weight: 700;
         color: rgb(65, 61, 75);
         margin-top: 50px;
+        margin-bottom: 20px;
     }
     p {
         font-family: $mainFontFamily;
         font-size: 0.875rem;
         font-weight: 300;
         color: $paragraphGray;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
     }
     .button {
         display: block;
@@ -68,6 +72,14 @@
             font-weight: 900;
             margin-top: 20px;
             text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #about {
+        .about-text {
+            padding-left: 80px;
         }
     }
 }
