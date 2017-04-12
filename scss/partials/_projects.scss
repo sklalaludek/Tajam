@@ -72,7 +72,7 @@
             transform: scale(1.15);
         }
         figcaption {
-            padding: 15px;
+            padding: 10px;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -84,7 +84,7 @@
                 font-weight: 300;
                 color: #ffffff;
                 border: 1px solid #ffffff;
-                padding: 60px;
+                padding: 55px;
                 transition: opacity 0.35s, transform 0.35s;
                 transform: translate3d(-10px, 0, 0);
             }
@@ -98,7 +98,7 @@
 }
 
 .overlay-effect:hover figcaption p {
-        opacity: 1;
+        opacity: 1; 
         transform: translate3d(0,0,0);
 }
 
