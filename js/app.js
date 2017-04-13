@@ -38,19 +38,34 @@ $(document).ready(function() {
 
     /*sticky menu*/
 
-    var homepage = header.find('.homepage'),
-    homepageTop = homepage.offset().top,
-    homepageWrapper = homepage.find('.homepage-wrapper');
+    var header = $('.page-header'),
+    headerTop = header.offset().top,
+    homepage = header.find('.homepage'),
+    homepageTop = homepage.offset().top;
+    // homepageWrapper = homepage.find('.homepage-wrapper');
 
     function stickyMenu(event) {
         var scroll = $(this).scrollTop();
-        if (scroll > homepageTop) {
-            homepage.addClass('sticky');
-            homepageWrapper.addClass('main-wrapper');
-            homepage.addClass('color-bg');
+        // console.log(homepageTop);
+        // console.log(headerTop);
+
+        if (scroll > headerTop) {
+            header.css({
+                'position' : 'fixed' ,
+                'background-color' : '#09052f' ,
+                'z-index' : '9999' ,
+                'transition' : 'all 0.3s ease'
+            });
+            // header.addClass('sticky');
+            // homepageWrapper.addClass('main-wrapper');
+            // header.addClass('color-bg');
         } else {
-            homepage.removeClass('sticky');
-            homepage.removeClass('color-bg');
+            // homepage.removeClass('sticky');
+            // homepage.removeClass('color-bg');
+            header.css({
+                'position' : 'absolute' ,
+                'background-color' : 'transparent'
+            });
         }
     }
 
@@ -103,17 +118,17 @@ $(document).ready(function() {
     /* carousel */
 
     // Activate Carousel
-    $('#quote-carousel').carousel();
-
-    // Enable Carousel Indicators
-    $('.item').click(function(){
-        $('#quote-carousel').carousel(1);
-    });
-
-    // Enable Carousel Controls
-    $('.left').click(function(){
-        $('#quote-carousel').carousel('prev');
-    });
+    // $('#quote-carousel').carousel();
+    //
+    // // Enable Carousel Indicators
+    // $('.item').click(function(){
+    //     $('#quote-carousel').carousel(1);
+    // });
+    //
+    // // Enable Carousel Controls
+    // $('.left').click(function(){
+    //     $('#quote-carousel').carousel('prev');
+    // });
 
     /* newsletter */
 
@@ -128,7 +143,10 @@ $(document).ready(function() {
             newsletterInput.css('border', '1px solid #e5e5e5');
             console.log('email is ok');
         }
-    } 
+        $(this).on('focusout', function() {
+            $(this).css('border', '1px solid #e5e5e5');
+        });
+    }
 
 
 

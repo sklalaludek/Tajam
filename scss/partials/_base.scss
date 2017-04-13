@@ -92,13 +92,14 @@ a:link, a:visited, a:hover, a:active {
     letter-spacing: normal;
 }
 
-.sticky {
-    z-index: 100000;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+// header.page-header .sticky {
+//     z-index: 100000;
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     background-color: $blue;
+// }
 
 .color-bg {
     background-color: $blue;
