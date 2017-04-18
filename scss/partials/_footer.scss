@@ -138,3 +138,20 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page-footer {
+        .newsletter {
+            input {
+                padding: 8px;
+                max-width: 170px;
+                &::placeholder {
+                    font-size: 0.813rem;
+                }
+            }
+            .arrow-box {
+                width: 40px;
+            }
+        }
+    }
+}
