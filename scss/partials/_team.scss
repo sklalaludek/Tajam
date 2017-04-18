@@ -31,10 +31,19 @@
         align-items: center;
         flex-direction: column;
         transition: transform .5s linear 0s;
-        img {
-            background-color: #ffffff;
+        .employee {
             height: 229px;
             width: 220px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .employee-1 {
+            background-image: url('../images/employee1.jpg');
+            background-position: center 30%;
+        }
+        .employee-2 {
+            background-image: url('../images/employee2.jpg');
+            background-position: center 48%;
         }
         figcaption {
             display: flex;
@@ -89,7 +98,7 @@
     #team {
         .team-member {
             figcaption {
-                width: 211px;
+                width: 220px;
             }
         }
     }
