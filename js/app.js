@@ -6,7 +6,7 @@ $(document).ready(function() {
       var timeout,
       immediate = true,
       wait = arguments[1] !== (void 0) ? arguments[1] : 20;
-      console.log(wait);
+
       return function() {
         var context = this, args = arguments;
         var later = function() {
@@ -35,6 +35,7 @@ $(document).ready(function() {
         $(document).on('click', function(event){
             if (!$(event.target).closest(header).length) {
                 menu.removeClass('nav-opened');
+                homepage.removeClass('color-bg');
             }
         });
     }
@@ -49,7 +50,6 @@ $(document).ready(function() {
 
     function stickyMenu(event) {
         var scroll = $(this).scrollTop();
-        console.log(scroll);
         // console.log(homepageTop);
         // console.log(headerTop);
 
@@ -154,7 +154,7 @@ $(document).ready(function() {
 
 
 
-    $(window).on('scroll', debounce(stickyMenu));
+    $(window).on('scroll', debounce(stickyMenu, 10));
     $(window).on('scroll', debounce(showAnimation));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     $(window).on('resize', startSlider);
