@@ -2,8 +2,11 @@ $(document).ready(function() {
 
     /*debounce*/
 
-    function debounce(func, wait = 20, immediate = true) {
-      var timeout;
+    function debounce(func, wait) {
+      var timeout,
+      immediate = true,
+      wait = arguments[1] !== (void 0) ? arguments[1] : 20;
+      console.log(wait);
       return function() {
         var context = this, args = arguments;
         var later = function() {
@@ -15,7 +18,7 @@ $(document).ready(function() {
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
       };
-    };
+    }
 
     /*hamburger menu */
 
@@ -46,6 +49,7 @@ $(document).ready(function() {
 
     function stickyMenu(event) {
         var scroll = $(this).scrollTop();
+        console.log(scroll);
         // console.log(homepageTop);
         // console.log(headerTop);
 
@@ -150,11 +154,12 @@ $(document).ready(function() {
 
 
 
-    $(window).on('scroll', debounce(stickyMenu, 10));
+    $(window).on('scroll', debounce(stickyMenu));
     $(window).on('scroll', debounce(showAnimation));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
-    $(window).on("resize", startSlider);
+    $(window).on('resize', startSlider);
     hamburgerMenu.on('click', showMobileMenu);
     startSlider();
     $('.newsletter .newsletter-email').on('keyup', checkEmail);
+
 });
