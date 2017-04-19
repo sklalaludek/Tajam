@@ -41,15 +41,20 @@
         justify-content: center;
         align-items: baseline;
         margin-top: 10px;
-        .levi {
-            margin-top: 20px;
-        }
     }
-    // .clients-logo .levi {
-    //     margin-top: 20px;
-    // }
-}
+    .levi {
+        margin-top: 25px;
+    }
     input::placeholder {
         font-family: $mainFontFamily;
         color: rgba(65, 61, 75, 0.5);
     }
+}
+
+@media screen and (min-width: 1024px){
+    #contact {
+        .contact-clients {
+            padding-left: 100px; 
+        }
+    }
+}
