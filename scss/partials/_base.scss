@@ -114,6 +114,21 @@ a:link, a:visited, a:hover, a:active {
     display: none;
 }
 
+/* scroll up button */
+.scrollUp {
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 1000;
+}
+
+/* animation */
+
 .slide-in {
     transition: transform .6s;
     opacity: 0;
