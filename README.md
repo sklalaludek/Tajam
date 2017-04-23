@@ -15,7 +15,7 @@ Tajam is a one-page design template for agencies built with Photoshop. It includ
 
 * Bootstrap Carousel
 
-## Web development tools:
+## Web Development tools:
 
 * jQuery
 * Bootstrap
