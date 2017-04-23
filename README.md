@@ -6,7 +6,7 @@ Tajam is a one-page design template for agencies built with Photoshop. It includ
 
 * Responsive design
 * Bootstrap Grid
-* Mobile Firendly
+* Mobile Friendly
 * Sticky Menu
 * Slider
 * Contact form
