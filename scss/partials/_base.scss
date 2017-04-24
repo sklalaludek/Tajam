@@ -115,8 +115,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* scroll up button */
+
 .scrollUp {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 15px;
     right: 20px;
@@ -125,6 +126,9 @@ a:link, a:visited, a:hover, a:active {
     border-radius: 50%;
     border: 1px solid white;
     z-index: 1000;
+}
+.scrollUp:hover {
+    background-color: $lightBlue;
 }
 
 /* animation */
