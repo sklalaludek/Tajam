@@ -40,7 +40,7 @@ $(document).ready(function() {
         });
     }
 
-    /*sticky menu & scrollUp*/
+    /*sticky menu & scrollUp button*/
 
     var header = $('.page-header'),
     headerTop = header.offset().top,
@@ -91,10 +91,17 @@ $(document).ready(function() {
             targetTop = $(targetId).offset().top - 70;
             $('body, html').animate({
                 scrollTop: targetTop + 'px'
-            }, 1000);
+            }, 700);
         }
     }
 
+    /*scrollUp*/
+    function backToTop(event){
+        event.preventDefault();
+        $('body', 'html').animate({
+            scrollTop: $('#home').offset().top + 'px'
+        }, 1000);
+    }
 
     /*main slider*/
 
@@ -106,7 +113,7 @@ $(document).ready(function() {
     currentSlide = 1,
     myInterval;
 
-    /* start slider */
+    /*start slider*/
 
     function startSlider(event) {
         var width = $(window).width();
@@ -125,13 +132,13 @@ $(document).ready(function() {
        }, pause);
    }
 
-    /* stop slider */
+    /*stop slider*/
 
     function stopSlider(event){
         clearInterval(myInterval);
     }
 
-    /* show animation */
+    /*show animation*/
 
     function showAnimation(event){
         var slideInElements = $('.slide-in');
@@ -142,7 +149,7 @@ $(document).ready(function() {
         }
     }
 
-    /* newsletter */
+    /*newsletter*/
 
     function checkEmail(event){
         var newsletterInput = $('.newsletter .newsletter-email'),
@@ -168,4 +175,5 @@ $(document).ready(function() {
     startSlider();
     $('.newsletter .newsletter-email').on('keyup', checkEmail);
     $('ul.navigation a').on('click', showSection);
+    $('.scrollUp').on('click', backToTop);
 });
