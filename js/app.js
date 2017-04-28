@@ -96,6 +96,7 @@ $(document).ready(function() {
     }
 
     /*scrollUp*/
+    
     function backToTop(event){
         event.preventDefault();
         $('body', 'html').animate({
@@ -108,22 +109,41 @@ $(document).ready(function() {
     var slider = $('.main-slider'),
     slides = slider.find('.slides'),
     slide = slides.find('.slide'),
+    dots = $('.dots > a'),
     animationSpeed = 1000,
     pause = 5000,
     currentSlide = 1,
     myInterval;
 
+    /*bulltes navigation to slider*/
+
+    dots.on('click', function(){
+        $(this).addClass('active-dot');
+        stopSlider();
+        currentSlide = $(this).data('number');
+        startSlider();
+        return currentSlide;
+    })
+
     /*start slider*/
 
-    function startSlider(event) {
+    function startSlider() {
         var width = $(window).width();
         slide.css('width', width);
         slides.css('width', 6*width).css("margin-left", (currentSlide) * (-1) * width );
-
         clearInterval(myInterval);
+
         myInterval = setInterval(function(){
            slides.animate({'margin-left': '-=' + width}, animationSpeed, function(){
                currentSlide++;
+               /*dots*/
+               dots.each(function(index, el){
+                  if ($(el).data('number') === currentSlide) {
+                      $(el).addClass('active-dot');
+                  } else {
+                      $(el).removeClass('active-dot');
+                  }
+               })
                if (currentSlide === slide.length - 1) {
                    currentSlide = 1;
                    slides.css('margin-left',  (currentSlide) * (-1) * width);
@@ -136,6 +156,14 @@ $(document).ready(function() {
 
     function stopSlider(event){
         clearInterval(myInterval);
+    }
+
+    /*mobile*/
+
+    function mobileMenu(event){
+        if (window.innerWidth > 768) {
+        menu.removeClass('nav-opened');
+        }
     }
 
     /*show animation*/
@@ -176,4 +204,5 @@ $(document).ready(function() {
     $('.newsletter .newsletter-email').on('keyup', checkEmail);
     $('ul.navigation a').on('click', showSection);
     $('.scrollUp').on('click', backToTop);
+    $(window).on('resize', mobileMenu);
 });
