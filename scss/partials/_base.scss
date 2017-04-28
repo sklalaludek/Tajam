@@ -131,11 +131,12 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; 
+    cursor: pointer;
+    &:hover {
+        background-color: $lightBlue;
+    }
 }
-.scrollUp:hover {
-    background-color: $lightBlue;
-}
+
 
 /* animation */
 

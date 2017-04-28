@@ -8,11 +8,13 @@
     margin-left: auto;
     margin-right: auto;
 }
-
 .homepage {
         padding: 0;
         width: 100%;
         min-height: 80px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         .navigation {
             display: none;
         }
@@ -210,8 +212,11 @@
     .homepage {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         text-transform: uppercase;
+        .logo-img {
+            padding: 0;
+        }
         .navigation {
             display: flex;
             font-size: 0.8125rem;
