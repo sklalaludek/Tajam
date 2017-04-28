@@ -96,7 +96,7 @@ $(document).ready(function() {
     }
 
     /*scrollUp*/
-    
+
     function backToTop(event){
         event.preventDefault();
         $('body', 'html').animate({
@@ -115,7 +115,7 @@ $(document).ready(function() {
     currentSlide = 1,
     myInterval;
 
-    /*bulltes navigation to slider*/
+    /*bullets navigation to slider*/
 
     dots.on('click', function(){
         $(this).addClass('active-dot');
