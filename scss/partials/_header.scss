@@ -27,6 +27,7 @@
 /*hamburger menu */
 
 .nav-opened {
+    background-color: $blue;
     .page-nav {
         .navigation {
             display: flex;
@@ -213,6 +214,7 @@
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
+        background-color: transparent;
         .logo-img {
             padding: 0;
         }

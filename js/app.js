@@ -20,7 +20,7 @@ $(document).ready(function() {
       };
     }
 
-    /*hamburger menu */
+    /*hamburger menu on click*/
 
     var hamburgerMenu = $('.hamburger'),
     header = $('.page-header'),
@@ -28,14 +28,12 @@ $(document).ready(function() {
 
     function showMobileMenu(event) {
         menu.toggleClass('nav-opened');
-        homepage.addClass('color-bg');
 
     /*hide mobile menu*/
 
         $(document).on('click', function(event){
             if (!$(event.target).closest(header).length) {
                 menu.removeClass('nav-opened');
-                homepage.removeClass('color-bg');
             }
         });
     }
