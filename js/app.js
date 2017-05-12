@@ -44,7 +44,6 @@ $(document).ready(function() {
     headerTop = header.offset().top,
     homepage = header.find('.homepage'),
     homepageTop = homepage.offset().top;
-    // homepageWrapper = homepage.find('.homepage-wrapper');
 
     function stickyMenu(event) {
         var scroll = $(this).scrollTop();
@@ -87,7 +86,7 @@ $(document).ready(function() {
             event.preventDefault();
             var targetId = $(this).attr('href'),
             targetTop = $(targetId).offset().top - 70;
-            $('body, html').animate({
+            $('html,body').animate({
                 scrollTop: targetTop + 'px'
             }, 700);
         }
@@ -96,8 +95,8 @@ $(document).ready(function() {
     /*scrollUp*/
 
     function backToTop(event){
-        event.preventDefault();
-        $('body', 'html').animate({
+        // event.preventDefault();
+        $('html,body').animate({
             scrollTop: $('#home').offset().top + 'px'
         }, 1000);
     }
@@ -169,7 +168,6 @@ $(document).ready(function() {
     function showAnimation(event){
         var slideInElements = $('.slide-in');
         var slideInAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElements.height() / 2;
-
         if (slideInAt > slideInElements.offset().top) {
                 slideInElements.addClass('active-element');
         }
