@@ -41,16 +41,10 @@ $(document).ready(function() {
     /*sticky menu & scrollUp button*/
 
     var header = $('.page-header'),
-    headerTop = header.offset().top,
-    homepage = header.find('.homepage'),
-    homepageTop = homepage.offset().top;
+    headerTop = header.offset().top;
 
     function stickyMenu(event) {
-        var scroll = $(this).scrollTop();
-        // console.log(homepageTop);
-        // console.log(headerTop);
-        // console.log(scroll);
-
+        scroll = $(this).scrollTop();
         // sticky menu
         if (scroll > headerTop) {
             header.css({
@@ -59,18 +53,12 @@ $(document).ready(function() {
                 'z-index' : '9999' ,
                 'transition' : 'all 0.3s ease'
             });
-            // header.addClass('sticky');
-            // homepageWrapper.addClass('main-wrapper');
-            // header.addClass('color-bg');
         } else {
-            // homepage.removeClass('sticky');
-            // homepage.removeClass('color-bg');
             header.css({
                 'position' : 'absolute' ,
                 'background-color' : 'transparent'
             });
         }
-
         //scroll up button
         if (scroll > 530) {
             $('.scrollUp').fadeIn();
@@ -115,9 +103,10 @@ $(document).ready(function() {
     /*bullets navigation to slider*/
 
     dots.on('click', function(){
-        $(this).addClass('active-dot');
+        dots.removeClass('active-dot');
         stopSlider();
         currentSlide = $(this).data('number');
+        $(this).addClass('active-dot');
         startSlider();
         return currentSlide;
     })
