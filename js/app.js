@@ -4,8 +4,8 @@ $(document).ready(function() {
 
     function debounce(func, wait) {
       var timeout,
-      immediate = true,
-      wait = arguments[1] !== (void 0) ? arguments[1] : 20;
+            immediate = true,
+            wait = arguments[1] !== (void 0) ? arguments[1] : 20;
 
       return function() {
         var context = this, args = arguments;
@@ -23,8 +23,8 @@ $(document).ready(function() {
     /*hamburger menu on click*/
 
     var hamburgerMenu = $('.hamburger'),
-    header = $('.page-header'),
-    menu = $('.menu');
+          header = $('.page-header'),
+          menu = $('.menu');
 
     function showMobileMenu(event) {
         menu.toggleClass('nav-opened');
@@ -41,7 +41,7 @@ $(document).ready(function() {
     /*sticky menu & scrollUp button*/
 
     var header = $('.page-header'),
-    headerTop = header.offset().top;
+          headerTop = header.offset().top;
 
     function stickyMenu(event) {
         scroll = $(this).scrollTop();
@@ -115,6 +115,7 @@ $(document).ready(function() {
 
     function startSlider() {
         var width = $(window).width();
+
         slide.css('width', width);
         slides.css('width', 6*width).css("margin-left", (currentSlide) * (-1) * width );
         clearInterval(myInterval);
@@ -155,13 +156,16 @@ $(document).ready(function() {
     /*show animation slide-in*/
 
     function showAnimationSlideIn(event){
-    var slideInElImg = $('.animation-about-img'),
-          slideInElPar = $('.animation-about-text'),
-          slideInElForm = $('.animation-contact-form'),
-          slideInElLogos = $('.animation-contact-logos'),
-          //bottom of window
-          slideInElAboutAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElImg.height() / 2,
-          slideInElContactAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElForm.height() / 2;
+        var slideInElImg = $('.animation-about-img'),
+              slideInElPar = $('.animation-about-text'),
+              slideInElForm = $('.animation-contact-form'),
+              slideInElLogos = $('.animation-contact-logos'),
+              slideInElTitle = $('.animation-work-title'),
+              slideInElLink = $('.animation-work-link'),
+              //bottom of window
+              slideInElAboutAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElImg.height() / 2,
+              slideInElContactAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElForm.height() / 2,
+              slideInElWorkAt =  ($(window).scrollTop() + $(window).innerHeight()) - slideInElTitle.height() / 2;
 
         if (slideInElAboutAt > slideInElImg.offset().top) {
             slideInElImg.addClass('active-element');
@@ -171,15 +175,20 @@ $(document).ready(function() {
             slideInElForm.addClass('active-element');
             slideInElLogos.addClass('active-element');
         }
+        if (slideInElWorkAt > slideInElTitle.offset().top) {
+            slideInElTitle.addClass('active-element'); 
+            slideInElLink.addClass('active-element');
+        }
     }
 
     /*newsletter*/
 
     function checkEmail(event){
         var newsletterInput = $('.newsletter .newsletter-email'),
-        text = newsletterInput.val(),
-        atPosition = text.indexOf('@'),
-        dotPosition = text.lastIndexOf('.');
+              text = newsletterInput.val(),
+              atPosition = text.indexOf('@'),
+              dotPosition = text.lastIndexOf('.');
+
         if (atPosition < 1 || dotPosition < atPosition + 2) {
             newsletterInput.css('border', '1px solid red');
         } else {
