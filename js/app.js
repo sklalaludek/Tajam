@@ -152,13 +152,24 @@ $(document).ready(function() {
         }
     }
 
-    /*show animation*/
+    /*show animation slide-in*/
 
-    function showAnimation(event){
-        var slideInElements = $('.slide-in');
-        var slideInAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElements.height() / 2;
-        if (slideInAt > slideInElements.offset().top) {
-                slideInElements.addClass('active-element');
+    function showAnimationSlideIn(event){
+    var slideInElImg = $('.animation-about-img'),
+          slideInElPar = $('.animation-about-text'),
+          slideInElForm = $('.animation-contact-form'),
+          slideInElLogos = $('.animation-contact-logos'),
+          //bottom of window
+          slideInElAboutAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElImg.height() / 2,
+          slideInElContactAt = ($(window).scrollTop() + $(window).innerHeight()) - slideInElForm.height() / 2;
+
+        if (slideInElAboutAt > slideInElImg.offset().top) {
+            slideInElImg.addClass('active-element');
+            slideInElPar.addClass('active-element');
+        }
+        if (slideInElContactAt > slideInElForm.offset().top) {
+            slideInElForm.addClass('active-element');
+            slideInElLogos.addClass('active-element');
         }
     }
 
@@ -181,7 +192,7 @@ $(document).ready(function() {
     }
 
     $(window).on('scroll', debounce(stickyMenu, 10));
-    $(window).on('scroll', debounce(showAnimation));
+    $(window).on('scroll', debounce(showAnimationSlideIn));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     $(window).on('resize', startSlider);
     hamburgerMenu.on('click', showMobileMenu);
