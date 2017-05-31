@@ -97,9 +97,6 @@ a:link, a:visited, a:hover, a:active {
 //     width: 960px;
 // }
 //
-// .hidden {
-//     display: none;
-// }
 
 /* scroll up button */
 
@@ -143,4 +140,8 @@ a:link, a:visited, a:hover, a:active {
 .active-element {
     opacity: 1;
     transform: translate(0%) scale(1);
+}
+
+.hidden {
+    opacity: 0;
 }

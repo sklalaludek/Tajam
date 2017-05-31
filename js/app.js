@@ -176,11 +176,23 @@ $(document).ready(function() {
             slideInElLogos.addClass('active-element');
         }
         if (slideInElWorkAt > slideInElTitle.offset().top) {
-            slideInElTitle.addClass('active-element'); 
+            slideInElTitle.addClass('active-element');
             slideInElLink.addClass('active-element');
         }
     }
 
+    // function showAnimationFadeIn(){
+    //     var expertiseEl = $('.expertise-item'),
+    //           expertiseTitle = $('#expertise').find('h3'),
+    //           changeOpacityAt = ($(window).scrollTop() + $(window).innerHeight());
+    //
+    //     if (changeOpacityAt > expertiseTitle.offset().top) {
+    //         expertiseEl.removeClass('hidden');
+    //         expertiseEl.animate({
+    //             opacity: 1,
+    //         }, 1000);
+    //     }
+    // }
     /*newsletter*/
 
     function checkEmail(event){
@@ -202,6 +214,7 @@ $(document).ready(function() {
 
     $(window).on('scroll', debounce(stickyMenu, 10));
     $(window).on('scroll', debounce(showAnimationSlideIn));
+    // $(window).on('scroll', debounce(showAnimationFadeIn));
     slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     $(window).on('resize', startSlider);
     hamburgerMenu.on('click', showMobileMenu);
