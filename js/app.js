@@ -40,8 +40,7 @@ $(document).ready(function() {
 
     /*sticky menu & scrollUp button*/
 
-    var header = $('.page-header'),
-          headerTop = header.offset().top;
+        var headerTop = header.offset().top;
 
     function stickyMenu(event) {
         scroll = $(this).scrollTop();
@@ -83,7 +82,6 @@ $(document).ready(function() {
     /*scrollUp*/
 
     function backToTop(event){
-        // event.preventDefault();
         $('html,body').animate({
             scrollTop: $('#home').offset().top + 'px'
         }, 1000);
@@ -109,7 +107,7 @@ $(document).ready(function() {
         $(this).addClass('active-dot');
         startSlider();
         return currentSlide;
-    })
+    });
 
     /*start slider*/
 
@@ -183,16 +181,14 @@ $(document).ready(function() {
 
     /*form validation*/
 
-    var submitBtn = document.querySelector('fieldset a.submit');
-
     function checkForm(){
         e.preventDefault();
-        
+        var submitBtn = document.querySelector('fieldset a.submit');
+
         function checkEmail(){
             var emailInput = document.querySelector('fieldset input[name="email"]'),
-            emailRegEx = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
-            var emailValue = emailInput.value;
-            var submitBtn = document.querySelector('a.submit');
+                  emailRegEx = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/,
+                  emailValue = emailInput.value;
 
             return emailValue.match(emailRegEx) != null ? true : false;
         }
