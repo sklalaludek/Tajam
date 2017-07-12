@@ -181,6 +181,29 @@ $(document).ready(function() {
         }
     }
 
+    /*form validation*/
+
+    var submitBtn = document.querySelector('fieldset a.submit');
+
+    function checkForm(){
+        e.preventDefault();
+        
+        function checkEmail(){
+            var emailInput = document.querySelector('fieldset input[name="email"]'),
+            emailRegEx = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
+            var emailValue = emailInput.value;
+            var submitBtn = document.querySelector('a.submit');
+
+            return emailValue.match(emailRegEx) != null ? true : false;
+        }
+
+        if (checkEmail()) {
+                console.log('correct');
+            } else {
+            console.log('wrong email');
+        }
+    }
+
     /*newsletter*/
 
     function checkEmail(event){
@@ -206,6 +229,7 @@ $(document).ready(function() {
     $(window).on('resize', startSlider);
     hamburgerMenu.on('click', showMobileMenu);
     startSlider();
+    $('fieldset a.submit').on('click', checkForm);
     $('.newsletter .newsletter-email').on('keyup', checkEmail);
     $('ul.navigation a').on('click', showSection);
     $('.scrollUp').on('click', backToTop);
