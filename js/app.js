@@ -27,11 +27,12 @@ $(document).ready(function() {
           menu = $('.menu');
 
     function showMobileMenu(event) {
+        //toggle class by clicking on hamburger menu
         menu.toggleClass('nav-opened');
-
-    /*hide mobile menu*/
-
+        /*hide mobile menu*/
         $(document).on('click', function(event){
+            event.stopPropagation();
+            // close menu on click outside the header
             if (!$(event.target).closest(header).length) {
                 menu.removeClass('nav-opened');
             }
@@ -40,7 +41,7 @@ $(document).ready(function() {
 
     /*sticky menu & scrollUp button*/
 
-        var headerTop = header.offset().top;
+    var headerTop = header.offset().top;
 
     function stickyMenu(event) {
         scroll = $(this).scrollTop();
@@ -90,13 +91,13 @@ $(document).ready(function() {
     /*main slider*/
 
     var slider = $('.main-slider'),
-    slides = slider.find('.slides'),
-    slide = slides.find('.slide'),
-    dots = $('.dots > a'),
-    animationSpeed = 1000,
-    pause = 5000,
-    currentSlide = 1,
-    myInterval;
+      slides = slider.find('.slides'),
+      slide = slides.find('.slide'),
+      dots = $('.dots > a'),
+      animationSpeed = 1000,
+      pause = 5000,
+      currentSlide = 1,
+      myInterval;
 
     /*bullets navigation to slider*/
 
@@ -128,7 +129,7 @@ $(document).ready(function() {
                   } else {
                       $(el).removeClass('active-dot');
                   }
-               })
+               });
                if (currentSlide === slide.length - 1) {
                    currentSlide = 1;
                    slides.css('margin-left',  (currentSlide) * (-1) * width);
@@ -147,7 +148,7 @@ $(document).ready(function() {
 
     function mobileMenu(event){
         if (window.innerWidth > 768) {
-        menu.removeClass('nav-opened');
+            menu.removeClass('nav-opened');
         }
     }
 
@@ -183,16 +184,12 @@ $(document).ready(function() {
 
     function checkForm(){
         e.preventDefault();
-        var submitBtn = document.querySelector('fieldset a.submit');
-
         function checkEmail(){
-            var emailInput = document.querySelector('fieldset input[name="email"]'),
+            var emailInput = $('fieldset input[name="email"]'),
                   emailRegEx = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/,
-                  emailValue = emailInput.value;
-
-            return emailValue.match(emailRegEx) != null ? true : false;
+                  emailValue = emailInput.val();
+            return emailValue.match(emailRegEx) !== null ? true : false;
         }
-
         if (checkEmail()) {
                 console.log('correct');
             } else {
@@ -212,7 +209,6 @@ $(document).ready(function() {
             newsletterInput.css('border', '1px solid red');
         } else {
             newsletterInput.css('border', '1px solid #e5e5e5');
-            console.log('email is ok');
         }
         $(this).on('focusout', function() {
             $(this).css('border', '1px solid #e5e5e5');
