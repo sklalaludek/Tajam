@@ -183,7 +183,7 @@ $(document).ready(function() {
     /*form validation*/
 
     function checkForm(){
-        e.preventDefault();
+        event.preventDefault();
         function checkEmail(){
             var emailInput = $('fieldset input[name="email"]'),
                   emailRegEx = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/,
